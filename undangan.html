@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        div.container {
+            min-width: 300px;
+            max-width: 500px;
+            margin: 0px auto;
+        }
+
+        section.page {
+            width: 100%;
+            min-height: 100vh;
+            background-color: salmon;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p, h1 {
+            text-align: center;
+        }
+
+        section.page.one {
+            gap: 300pt;
+            background-image: url(wedding.jpg);
+            background-size: cover;
+        }
+
+        section.page.one > div > h1 {
+            font-size: 30pt;
+        }
+
+        section.page.two {
+            justify-content: space-evenly;
+            padding: 20px;
+            background-image: url(place.jpg);
+            background-size: cover;
+        }
+
+        section.page.two > h1 {
+            font-size: 50px;
+        }
+
+        div.card {
+            padding: 10pt;
+            width: 250pt;
+            min-height: 300pt;
+            background-color: beige;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .page.two div.circle {
+            width: 150pt;
+            height: 150pt;
+            border-radius: 75pt;
+            background-color: greenyellow;
+            background-image: url(bride.jpg);
+            background-position-x: center;
+            background-position-y: 3800px;
+            margin-bottom: 50px;
+        }
+
+        section.page.three {
+            justify-content: space-evenly;
+            padding: 20px;
+            background-image: url(place.jpg);
+            background-size: cover;
+        }
+
+        section.page.three > h1 {
+            font-size: 50px;
+        }
+
+        .page.three div.circle {
+            width: 150pt;
+            height: 150pt;
+            border-radius: 75pt;
+            background-color: greenyellow;
+            background-image: url(groom.jpg);
+            background-position-x: center;
+            background-position-y: 3950px;
+            margin-bottom: 50px;
+        }
+
+        div.line {
+            width: 200px;
+            height: 3px;
+            background-color: black;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="page one">
+            <div class="title">
+                <p>The Wedding of</p>
+                <h1>Didi & Adit</h1>
+                <p>Minggu, 17 September 2023</p>
+            </div>
+
+            <div class="guest-name">
+                <p>Kepada Yth,</p>
+                <p>Tono S.pd</p>
+            </div>
+        </section>
+        <section class="page two">
+            <h2>The Beloved</h2>
+            <h1>Didi & Adit</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aspernatur, consectetur corrupti dignissimos nobis numquam odit unde, esse asperiores eaque, aliquam repellat necessitatibus aperiam culpa ullam ea dolorem deserunt magni.</p>
+            <div class="card">
+                <div class="circle"></div>
+                <h1>Didi Dadidu, S.pd.</h1>
+                <div class="line"></div>
+                <p>Putri Pertama</p>
+                <p>Bapak Syamsudin</p>
+                <p>&</p>
+                <p>Ibu Sumiati</p>
+            </div>
+        </section>
+        <section class="page three">
+            <h2>The Beloved</h2>
+            <h1>Didi & Adit</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aspernatur, consectetur corrupti dignissimos nobis numquam odit unde, esse asperiores eaque, aliquam repellat necessitatibus aperiam culpa ullam ea dolorem deserunt magni.</p>
+            <div class="card">
+                <div class="circle"></div>
+                <h1>Adit Dudidam, S.pd.</h1>
+                <div class="line"></div>
+                <p>Putra Ketiga</p>
+                <p>Bapak Joko</p>
+                <p>&</p>
+                <p>Ibu Novrianti</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
